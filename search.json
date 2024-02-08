@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "posts/004_flying_pigs/index.html",
-    "href": "posts/004_flying_pigs/index.html",
-    "title": "My first post",
-    "section": "",
-    "text": "for idx in range(10):\n    print('Hello')\n\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello"
-  },
-  {
-    "objectID": "posts/004_flying_pigs/index.html#this-is-a-blog-post",
-    "href": "posts/004_flying_pigs/index.html#this-is-a-blog-post",
-    "title": "My first post",
-    "section": "",
-    "text": "for idx in range(10):\n    print('Hello')\n\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello\nHello"
-  },
-  {
     "objectID": "posts/003_in_or_on_a_train/index.html",
     "href": "posts/003_in_or_on_a_train/index.html",
     "title": "On or In a Bike/Train/Spaceship?",
@@ -46,7 +32,7 @@
     "href": "index.html",
     "title": "Prompting LLMs",
     "section": "",
-    "text": "My first post\n\n\n\n\n\n\nLLMs\n\n\ntest\n\n\ndogs\n\n\n\nTesting out the blogging system\n\n\n\n\n\nFeb 6, 2024\n\n\nMatt\n\n\n\n\n\n\n\n\n\n\n\n\nOn or In a Bike/Train/Spaceship?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlanguage\n\n\n\nDo LLMs get prepositional associations\n\n\n\n\n\nFeb 4, 2024\n\n\nMatt O’Donnell\n\n\n\n\n\n\n\n\n\n\n\n\nLook at this stack of boxes…\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nHow do LLMs behave with a visual reasoning task?\n\n\n\n\n\nFeb 2, 2024\n\n\nMatt O’Donnell\n\n\n\n\n\n\n\n\n\n\n\n\nAgeism?…. It’s just a fact\n\n\n\n\n\n\nLLMs\n\n\nageism\n\n\nsocial attitudes\n\n\n\n\n\n\n\n\n\nJan 29, 2024\n\n\nMatt O’Donnell\n\n\n\n\n\n\nNo matching items"
+    "text": "And pigs might fly…\n\n\n\n\n\n\nLLMs\n\n\nvisualization\n\n\nidioms\n\n\nmetaphor\n\n\n\nDo LLMs visualize idioms and metaphors?\n\n\n\n\n\nFeb 8, 2024\n\n\nMatt O’Donnell\n\n\n\n\n\n\n\n\n\n\n\n\nOn or In a Bike/Train/Spaceship?\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlanguage\n\n\n\nDo LLMs get prepositional associations\n\n\n\n\n\nFeb 4, 2024\n\n\nMatt O’Donnell\n\n\n\n\n\n\n\n\n\n\n\n\nLook at this stack of boxes…\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nHow do LLMs behave with a visual reasoning task?\n\n\n\n\n\nFeb 2, 2024\n\n\nMatt O’Donnell\n\n\n\n\n\n\n\n\n\n\n\n\nAgeism?…. It’s just a fact\n\n\n\n\n\n\nLLMs\n\n\nageism\n\n\nsocial attitudes\n\n\n\n\n\n\n\n\n\nJan 29, 2024\n\n\nMatt O’Donnell\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/002_the_box_problem/index.html",

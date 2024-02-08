@@ -8,7 +8,7 @@ website:
       - about.qmd
 format:
   html:
-    theme: vapor
+    theme: cosmo
     css: styles.css
 
 execute:

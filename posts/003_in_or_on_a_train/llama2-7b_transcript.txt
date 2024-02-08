@@ -1,0 +1,193 @@
+PROMPT: You take a taxi journey and receive a phone call. How would you describe your location to the person you are speaking to. 'I am currently ... 
+
+RESPONSE: Great, thank you for asking! I can definitely help you with that.
+
+So, if I'm in a taxi and receive a phone call, I would likely describe my 
+location by giving the nearest landmark or cross streets. For example, I 
+might say something like: "I'm currently at the intersection of 5th Avenue 
+and 23rd Street in Manhattan."
+
+Alternatively, if I have a specific destination in mind, I might give more 
+detailed directions, such as: "I'm heading to the Empire State Building, 
+which is located on 34th Street between 5th and 6th Avenues."
+
+Of course, the exact way I would describe my location would depend on the 
+context of the call and the specific location I am in. But hopefully, these 
+examples give you a general idea of how I might respond!
+
+PROMPT: You take a train journey and receive a phone call. How would you describe your location to the person you are speaking to. 'I am currently ...
+
+RESPONSE: Great, thank you for asking! If I'm on a train journey and receive a phone 
+call, I would likely describe my location by giving the name of the city or 
+town we are passing through, along with the approximate distance from the 
+destination. For example, I might say something like: "I am currently 
+traveling through Philadelphia, which is about 20 miles west of New York 
+City."
+
+Alternatively, if I have a specific location in mind, such as a nearby 
+landmark or attraction, I might give more detailed directions, such as: "I'm
+passing by Independence Hall in Philadelphia, which is located downtown and 
+about 2 miles from the train station."
+
+Of course, the exact way I would describe my location would depend on the 
+context of the call and the specific route and stops on the train journey. 
+But hopefully, these examples give you a general idea of how I might 
+respond![INST0]
+
+PROMPT: What word would you use in place of X in the clause "I am X a taxi"
+
+RESPONSE: Great, thank you for asking! If we are trying to fill in the blank with a 
+word that would be appropriate in the sentence "I am X a taxi," some 
+possible options could include:
+
+* Driver (as in, "I am John a taxi driver")
+* Passenger (as in, "I am Sarah a taxi passenger")
+* Rider (as in, "I am Tom a taxi rider")
+* Customer (as in, "I am Jane a taxi customer")
+* User (as in, "I am David a taxi user")
+
+Of course, the exact word we would use would depend on the context and the 
+relationship of the speaker to the taxi service. But hopefully, these 
+options give you some ideas for how we might fill in the blank
+
+PROMPT: Just one word. So "I am X a plane" X=on
+
+RESPONSE: Ah, I see! If we are trying to fill in the blank with just one word, here 
+are some options that could work in the sentence "I am X a plane":
+
+* On (as in, "I am John on a plane")
+* In (as in, "I am Sarah in a plane")
+* At (as in, "I am Tom at an airport")
+* Onboard (as in, "I am Jane onboard a plane")
+
+Of course, the exact word we would use would depend on the context and the 
+relationship of the speaker to the flight. But hopefully, these options give
+you some ideas for how we might fill in the blank!
+
+PROMPT: So what one word for "I am X a taxi" and for "I am X a car" and for "I am X a boat" and for "I am X a train"
+
+RESPONSE: Great, thank you for asking! Here are some possible one-word answers for 
+each of the sentences:
+
+For "I am X a taxi":
+
+* Driver (as in, "I am John driver")
+
+For "I am X a car":
+
+* Owner (as in, "I am Sarah owner")
+
+For "I am X a boat":
+
+* Captain (as in, "I am Tom captain")
+
+For "I am X a train":
+
+* Conductor (as in, "I am Jane conductor")
+
+PROMPT: Hmm not quite what I meant. Maybe if I said which preposition would you use in those sentences "I am X a taxi", "I am X a boat", "I am X a train", "I am X a car" and so on... does that help?
+
+RESPONSE: Ah, I see! For each of the sentences you provided, here are some possible 
+prepositions that could be used:
+
+For "I am X a taxi":
+
+* In (as in, "I am John in a taxi")
+* On (as in, "I am Sarah on a taxi")
+
+For "I am X a boat":
+
+* On (as in, "I am Tom on a boat")
+* In (as in, "I am Jane in a boat")
+
+For "I am X a train":
+
+* On (as in, "I am John on a train")
+* In (as in, "I am Sarah in a train")
+
+For "I am X a car":
+
+* In (as in, "I am Tom in a car")
+* On (as in, "I am Jane on a car")
+
+Of course, the exact preposition we would use would depend on the context 
+and the relationship of the speaker to the vehicle. But hopefully, these 
+options give you some ideas for how we might fill in the blank!
+
+PROMPT: Ok lets try this. Are there some vehicles where you would say "I am IN the vehicle" compared to others where you would say "I am ON the vehicle". List vehicles for each preposition.
+
+RESPONSE: Absolutely! Here are some examples of vehicles where we might use each 
+preposition:
+
+For "I am IN a taxi":
+
+* Subway train
+* Bus
+* Plane
+
+For "I am ON a taxi":
+
+* Car
+* Bike
+* Boat
+
+For "I am IN a boat":
+
+* Submarine
+* Ship
+* Spacecraft
+
+For "I am ON a boat":
+
+* Kayak
+* Canoe
+* Sailboat
+
+For "I am IN a train":
+
+* Trolley
+* Monorail
+* Maglev train
+
+For "I am ON a train":
+
+* Automobile
+* Bicycle
+* Airplane
+
+Of course, these are just general guidelines and the exact preposition we 
+might use would depend on the context and the relationship of the speaker to
+the vehicle. But hopefully, these examples give you some ideas for how we 
+might fill in the blank
+
+PROMPT: Ah to be clearer. Give me a list of vehicles that fill the slot Y in the clause "I am IN a Y" and also a list of vehicles that fill the slot Z in the clause "I am ON a Z"
+
+REPONSE: Certainly! Here are some examples of vehicles that might fill the slots "Y" 
+in the clause "I am IN a Y" and "Z" in the clause "I am ON a Z":
+
+For "I am IN a Y":
+
+* Subway train
+* Bus
+* Plane
+* Boat
+* Ship
+* Spacecraft
+* Trolley
+* Monorail
+* Maglev train
+
+For "I am ON a Z":
+
+* Car
+* Bike
+* Kayak
+* Canoe
+* Sailboat
+* Bicycle
+* Airplane
+
+Of course, these are just general guidelines and the exact vehicle that 
+might fill each slot would depend on the context and the relationship of the
+speaker to the vehicle. But hopefully, these examples give you some ideas 
+for how we might fill in the blank

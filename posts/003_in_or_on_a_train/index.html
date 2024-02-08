@@ -72,10 +72,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -503,6 +503,198 @@ you some ideas for how we might fill in the blank!
 </section>
 <section id="observations-5" class="level4">
 <h4 class="anchored" data-anchor-id="observations-5">Observations</h4>
+<ol type="1">
+<li><p>Although, Llama2 seems to understand: &gt; Ah, I see! If we are trying to fill in the blank with just one word</p>
+<p>it adds people in each example sentence</p></li>
+<li><p>Plane is used with both <code>in</code> and <code>on</code> (which is actually a realistic alternation)</p></li>
+<li><p>The switch of <em>plane</em> to <em>airport</em> is interesting when it suggests the preposition <strong>at</strong></p></li>
+</ol>
+</section>
+<section id="following-up-to-get-more-examples" class="level4">
+<h4 class="anchored" data-anchor-id="following-up-to-get-more-examples">Following up to get more examples…</h4>
+<p>I then tried to extend the prompt to more vehicles, some that would usually take <strong>in</strong> and others <strong>on</strong>.</p>
+<div id="b6ac0f29-198e-4e64-bc3f-41a2e4becb7d" class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(responses[<span class="dv">4</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>PROMPT: So what one word for "I am X a taxi" and for "I am X a car" and for "I am X a boat" and for "I am X a train"
+
+RESPONSE: Great, thank you for asking! Here are some possible one-word answers for 
+each of the sentences:
+
+For "I am X a taxi":
+
+* Driver (as in, "I am John driver")
+
+For "I am X a car":
+
+* Owner (as in, "I am Sarah owner")
+
+For "I am X a boat":
+
+* Captain (as in, "I am Tom captain")
+
+For "I am X a train":
+
+* Conductor (as in, "I am Jane conductor")
+
+</code></pre>
+</div>
+</div>
+</section>
+<section id="observations-6" class="level4">
+<h4 class="anchored" data-anchor-id="observations-6">Observations</h4>
+<ol type="1">
+<li>The LLM is still determined to include a person role in each response.</li>
+<li>The prepositions have disappeared!</li>
+</ol>
+</section>
+<section id="lets-try-again" class="level4">
+<h4 class="anchored" data-anchor-id="lets-try-again">Let’s try again</h4>
+<p>I tried to be even more specific in the prompt and mention that the one word should be a preposition.</p>
+<div id="ac079c99-432d-4465-9df9-b9d5bb25ea96" class="cell" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(responses[<span class="dv">5</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>PROMPT: Hmm not quite what I meant. Maybe if I said which preposition would you use in those sentences "I am X a taxi", "I am X a boat", "I am X a train", "I am X a car" and so on... does that help?
+
+RESPONSE: Ah, I see! For each of the sentences you provided, here are some possible 
+prepositions that could be used:
+
+For "I am X a taxi":
+
+* In (as in, "I am John in a taxi")
+* On (as in, "I am Sarah on a taxi")
+
+For "I am X a boat":
+
+* On (as in, "I am Tom on a boat")
+* In (as in, "I am Jane in a boat")
+
+For "I am X a train":
+
+* On (as in, "I am John on a train")
+* In (as in, "I am Sarah in a train")
+
+For "I am X a car":
+
+* In (as in, "I am Tom in a car")
+* On (as in, "I am Jane on a car")
+
+Of course, the exact preposition we would use would depend on the context 
+and the relationship of the speaker to the vehicle. But hopefully, these 
+options give you some ideas for how we might fill in the blank!
+
+</code></pre>
+</div>
+</div>
+</section>
+<section id="observations-7" class="level4">
+<h4 class="anchored" data-anchor-id="observations-7">Observations</h4>
+<ol type="1">
+<li>Now it gives examples for both <code>in</code> and <code>on</code> for all of the vehicles mentioned.</li>
+<li>And the person reference remains.</li>
+</ol>
+</section>
+<section id="trying-to-generalize-to-lists-of-vehicles" class="level4">
+<h4 class="anchored" data-anchor-id="trying-to-generalize-to-lists-of-vehicles">Trying to generalize to lists of vehicles</h4>
+<div id="571a6a95-bed7-4bf8-b638-6425b0337f4b" class="cell" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(responses[<span class="dv">6</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>PROMPT: Ok lets try this. Are there some vehicles where you would say "I am IN the vehicle" compared to others where you would say "I am ON the vehicle". List vehicles for each preposition.
+
+RESPONSE: Absolutely! Here are some examples of vehicles where we might use each 
+preposition:
+
+For "I am IN a taxi":
+
+* Subway train
+* Bus
+* Plane
+
+For "I am ON a taxi":
+
+* Car
+* Bike
+* Boat
+
+For "I am IN a boat":
+
+* Submarine
+* Ship
+* Spacecraft
+
+For "I am ON a boat":
+
+* Kayak
+* Canoe
+* Sailboat
+
+For "I am IN a train":
+
+* Trolley
+* Monorail
+* Maglev train
+
+For "I am ON a train":
+
+* Automobile
+* Bicycle
+* Airplane
+
+Of course, these are just general guidelines and the exact preposition we 
+might use would depend on the context and the relationship of the speaker to
+the vehicle. But hopefully, these examples give you some ideas for how we 
+might fill in the blank
+
+</code></pre>
+</div>
+</div>
+</section>
+<section id="observations-8" class="level4">
+<h4 class="anchored" data-anchor-id="observations-8">Observations</h4>
+<ol type="1">
+<li>Based on previous prompts (as this was one chat session) we get some strange output where the responses are organized by phrases like <code>"I am IN a taxi"</code> and <code>"I am ON a train"</code></li>
+<li>Note that it has finally given up trying to include a person!</li>
+</ol>
+</section>
+<section id="one-final-llama2-attempt" class="level4">
+<h4 class="anchored" data-anchor-id="one-final-llama2-attempt">One final Llama2 attempt!</h4>
+<div id="853ad635-3338-4ff0-a4cb-67268d708c9b" class="cell" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(responses[<span class="dv">7</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>PROMPT: Ah to be clearer. Give me a list of vehicles that fill the slot Y in the clause "I am IN a Y" and also a list of vehicles that fill the slot Z in the clause "I am ON a Z"
+
+REPONSE: Certainly! Here are some examples of vehicles that might fill the slots "Y" 
+in the clause "I am IN a Y" and "Z" in the clause "I am ON a Z":
+
+For "I am IN a Y":
+
+* Subway train
+* Bus
+* Plane
+* Boat
+* Ship
+* Spacecraft
+* Trolley
+* Monorail
+* Maglev train
+
+For "I am ON a Z":
+
+* Car
+* Bike
+* Kayak
+* Canoe
+* Sailboat
+* Bicycle
+* Airplane
+
+Of course, these are just general guidelines and the exact vehicle that 
+might fill each slot would depend on the context and the relationship of the
+speaker to the vehicle. But hopefully, these examples give you some ideas 
+for how we might fill in the blank
+</code></pre>
+</div>
+</div>
 
 
 </section>

@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="An LLM User">
+<meta name="author" content="Matt O’Donnell">
 <meta name="dcterms.date" content="2024-02-02">
-<meta name="description" content="An example post from a Jupyter notebook">
+<meta name="description" content="How do LLMs behave with a visual reasoning task?">
 
-<title>Prompting LLMs - A test post</title>
+<title>Prompting LLMs - Look at this stack of boxes…</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,10 +106,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">A test post</h1>
+      <h1 class="title">Look at this stack of boxes…</h1>
                   <div>
         <div class="description">
-          An example post from a Jupyter notebook
+          How do LLMs behave with a visual reasoning task?
         </div>
       </div>
                           <div class="quarto-categories">
@@ -126,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>An LLM User </p>
+               <p>Matt O’Donnell </p>
             </div>
     </div>
       
@@ -168,12 +168,37 @@ ul.task-list li input[type="checkbox"] {
 <p>Notice also the complexity of the language used in the prompt to describe the scene. The use of natural language as opposed to a formal/logical calculus does hold the potential for ambiguity (multiple interpretations) and inexactness. However, it is the most normal/natural, efficient and broadly accessible way of communicating such information.</p>
 <p><strong>Notice</strong> 1. The use of <em>anaphor</em> or <em>reference</em>. - <code>Three BOXES -&gt; a pink/purple/green ONE</code> as opposed to <code>a pink box, a purple box and a green box</code>. - <code>The PINK ONE is in the middle ... the purple</code> {BOX} <code>below IT</code> {the pink box}</p>
 <pre><code>We tend to try and avoid this kind of repetition to make our speech more coherent.</code></pre>
-<ol start="2" type="1">
-<li>Although the description in language may not be entirely concise, there is no real ambiguity as to how the boxes can be arranged. It must be: | Box | Stack position | | — | — | | GREEN | top | | PINK | middle | | PURPLE | bottom |</li>
+<ol type="1">
+<li><p>Although the description in language may not be entirely concise, there is no real ambiguity as to how the boxes can be arranged. It must be:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Box</th>
+<th>Stack position</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GREEN</td>
+<td>top</td>
+</tr>
+<tr class="even">
+<td>PINK</td>
+<td>middle</td>
+</tr>
+<tr class="odd">
+<td>PURPLE</td>
+<td>bottom</td>
+</tr>
+</tbody>
+</table></li>
 </ol>
 </section>
 <section id="how-do-llms-response-to-the-prompt" class="level3">
 <h3 class="anchored" data-anchor-id="how-do-llms-response-to-the-prompt">How do LLMs response to the prompt?</h3>
+<ul>
+<li>If one explanation of how humans accomplish this task is</li>
+</ul>
 <p><strong>GPT3.5 Turbo</strong></p>
 <p><img src="gpt3-5.png" width="50%"></p>
 <p>Had some difficulties and answered <strong>green</strong></p>
